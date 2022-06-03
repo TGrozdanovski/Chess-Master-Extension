@@ -1,0 +1,125 @@
+<html>
+<head>
+    <script src="../jquery-3.3.1.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+
+<div class="container">
+    <p class="logo">
+        <img src="logo.png">
+    </p>
+    <div class="row">
+
+
+        <div class="col-md-12">
+
+            <table class="table table-bordered">
+                <tr class="color-cont">
+                    <td style="width: 50%;">
+                        <b>Show Borders</b>
+                    </td>
+                    <td>
+                        <button class="btn" id="show_borders"></button>
+                    </td>
+                </tr>
+
+                <tr class="color-cont borders" data-container="first">
+                    <td>Start Border color</td>
+                    <td>
+                        <span class="color-item red" data-val="red"><i class="fa fa-check"></i></span>
+                        <span class="color-item blue" data-val="blue"><i class="fa fa-check"></i></span>
+                        <span class="color-item green" data-val="green"><i class="fa fa-check"></i></span>
+                        <span class="color-item black" data-val="black"><i class="fa fa-check"></i></span>
+                        <span class="color-item orange" data-val="orange"><i class="fa fa-check"></i></span>
+                    </td>
+                </tr>
+
+                <tr class="color-cont borders" data-container="second">
+                    <td>End Border color</td>
+                    <td>
+                        <span class="color-item red" data-val="red"><i class="fa fa-check"></i></span>
+                        <span class="color-item blue" data-val="blue"><i class="fa fa-check"></i></span>
+                        <span class="color-item green" data-val="green"><i class="fa fa-check"></i></span>
+                        <span class="color-item black" data-val="black"><i class="fa fa-check"></i></span>
+                        <span class="color-item orange" data-val="orange"><i class="fa fa-check"></i></span>
+                    </td>
+                </tr>
+
+                <tr class="color-cont borders">
+                    <td>Show Ponder</td>
+                    <td>
+                        <button class="btn" id="ponder_status"></button>
+                    </td>
+                </tr>
+
+                <tr class="color-cont ponder borders" data-container="ponder">
+                    <td>Ponder color</td>
+                    <td>
+                        <span class="color-item red" data-val="red"><i class="fa fa-check"></i></span>
+                        <span class="color-item blue" data-val="blue"><i class="fa fa-check"></i></span>
+                        <span class="color-item green" data-val="green"><i class="fa fa-check"></i></span>
+                        <span class="color-item black" data-val="black"><i class="fa fa-check"></i></span>
+                        <span class="color-item orange" data-val="orange"><i class="fa fa-check"></i></span>
+                    </td>
+                </tr>
+
+
+
+                <tr class="color-cont" data-container="second">
+                    <td><b>Status</b></td>
+                    <td>
+                       <button class="btn" id="status"></button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Autostep Key
+                    </td>
+                    <td>
+                        <select name="key" id="autostepKey" class="form-control" style="width: 200px;">
+                            <option value="KeyQ">'q' key</option>
+                            <option value="Space">Space key</option>
+                            <option value="ControlLeft">Left Control key</option>
+                            <option value="ControlRight">Right Control key</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+
+            <a href="http://chess.orgfree.com/?tab=download" target="_blank">Download desktop application</a>
+            <a href="https://www.youtube.com/channel/UCO_-0maDrs5TBx0hpwz6kug" target="_blank" class="pull-right">Subscribe to Youtube channel</a>
+        </div>
+
+
+    </div>
+</div>
+<br><br>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <button class="btn btn-primary" id="update" style="margin-left: 20px;">Check for update</button>
+    </div>
+</div> 
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div style="width: 100%; height: 450px; overflow: hidden">
+                <iframe src="http://chess-master.info/info.html" frameborder="0" width="968px" height="1200px" id="frame"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
